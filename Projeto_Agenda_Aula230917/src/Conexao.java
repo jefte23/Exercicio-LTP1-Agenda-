@@ -1,25 +1,33 @@
-import java.util.ArrayList;
-
 public class Conexao {
 
-	private ArrayList<Opcao> opcoes;
+	private String tipo;
+	private String valor;
 
 	@Override
 	public String toString() {
-		return "Conexao [opcoes=" + opcoes + "]";
+		return "Conexao [tipo=" + tipo + ", valor=" + valor + "]";
 	}
 
-	public Conexao(ArrayList<Opcao> opcoes) {
+	public Conexao(String tipo, String valor) {
 		super();
-		this.opcoes = opcoes;
+		this.tipo = tipo;
+		this.valor = valor;
 	}
 
-	public ArrayList<Opcao> getOpcoes() {
-		return opcoes;
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setOpcoes(ArrayList<Opcao> opcoes) {
-		this.opcoes = opcoes;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
 	}
 
 }

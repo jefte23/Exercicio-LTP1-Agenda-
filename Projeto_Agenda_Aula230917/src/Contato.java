@@ -8,18 +8,17 @@ public class Contato {
 	private String cidade;
 	private String UF;
 	private Empresa empresa;
-	private ArrayList<Conexao> acessos;
+	private ArrayList<Conexao> conexoes;
 
 	// Metodo ToString
 	@Override
 	public String toString() {
 		return "Contato [nome=" + nome + ", dataNascimento=" + dataNascimento + ", sexo=" + sexo + ", cidade=" + cidade
-				+ ", UF=" + UF + ", empresa=" + empresa + ", acessos=" + acessos + "]";
+				+ ", UF=" + UF + ", empresa=" + empresa + ", conexoes=" + conexoes + "]";
 	}
 
 	// Metodo Construtor
-	public Contato(String nome, String dataNascimento, String sexo, String cidade, String UF, Empresa empresa,
-			ArrayList<Conexao> acessos) {
+	public Contato(String nome, String dataNascimento, String sexo, String cidade, String UF, Empresa empresa) {
 		super();
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
@@ -27,7 +26,6 @@ public class Contato {
 		this.cidade = cidade;
 		this.UF = UF;
 		this.empresa = empresa;
-		this.acessos = acessos;
 	}
 
 	// Metodos Set's e Get's
@@ -79,12 +77,12 @@ public class Contato {
 		this.empresa = empresa;
 	}
 
-	public ArrayList<Conexao> getAcessos() {
-		return acessos;
+	public ArrayList<Conexao> getAConexoes() {
+		return conexoes;
 	}
 
-	public void setAcessos(ArrayList<Conexao> acessos) {
-		this.acessos = acessos;
+	public void setConexoes(ArrayList<Conexao> conexoes) {
+		this.conexoes = conexoes;
 	}
 
 }
