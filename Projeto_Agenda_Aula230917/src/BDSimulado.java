@@ -53,16 +53,16 @@ public class BDSimulado {
 
 		// Instanciar Objetos da Classe Contato;
 		this.contatos = new ArrayList<Contato>();
-		Contato c1 = new Contato("João", "01/09/2000", "Masculino", "São Paulo", "SP", null, co1);
-		Contato c2 = new Contato("Mario", "01/09/1999", "Masculino", "Brasilia", "DF", null, conexoes);
-		Contato c3 = new Contato("Erivelton", "01/09/1980", "Masculino", "Belem", "PA", null, conexoes);
-		Contato c4 = new Contato("Larine", "01/09/1990", "Feminino", "Brasilia", "DF", null, conexoes);
-		Contato c5 = new Contato("Raquel", "01/09/1994", "Feminino", "Salvador", "BA", null, conexoes);
-		Contato c6 = new Contato("Eron", "01/09/1986", "Masculino", "Salvador", "BA", null, conexoes);
-		Contato c7 = new Contato("Pedro", "01/09/1983", "Masculino", "Patos", "MG", null, conexoes);
-		Contato c8 = new Contato("Capgemini", "01/05/1998", "Empresa", "Curitiba", "PR", e1, conexoes);
-		Contato c9 = new Contato("Banco do Brasil", "01/09/1700", "Empresa", "Brasilia", "DF", e2, conexoes);
-		Contato c10 = new Contato("CAST", "01/09/1995", "Empresa", "Rio de Janeiro", "RJ", e3, conexoes);
+		Contato c1 = new Contato("João", "01/09/2000", "Masculino", "São Paulo", "SP", null);
+		Contato c2 = new Contato("Mario", "01/09/1999", "Masculino", "Brasilia", "DF", null);
+		Contato c3 = new Contato("Erivelton", "01/09/1980", "Masculino", "Belem", "PA", null);
+		Contato c4 = new Contato("Larine", "01/09/1990", "Feminino", "Brasilia", "DF", null);
+		Contato c5 = new Contato("Raquel", "01/09/1994", "Feminino", "Salvador", "BA", null);
+		Contato c6 = new Contato("Eron", "01/09/1986", "Masculino", "Salvador", "BA", null);
+		Contato c7 = new Contato("Pedro", "01/09/1983", "Masculino", "Patos", "MG", null);
+		Contato c8 = new Contato("Capgemini", "01/05/1998", "Empresa", "Curitiba", "PR", e1);
+		Contato c9 = new Contato("Banco do Brasil", "01/09/1700", "Empresa", "Brasilia", "DF", e2);
+		Contato c10 = new Contato("CAST", "01/09/1995", "Empresa", "Rio de Janeiro", "RJ", e3);
 		// Adicionando Contato a Array
 		this.contatos.add(c1);
 		this.contatos.add(c2);
