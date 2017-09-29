@@ -67,7 +67,7 @@ public class BDSimulado {
 	public void addConexaoContato(String nomeContato, String tipo, String valor) {
 
 		// Declarar um objeto de contato
-		Conexao conexoes = new Conexao(getContatoPorNome(nomeContato), tipo, valor);
+		Conexao conexoes = new Conexao(tipo, valor);
 		// Percorrer a lista de filmes
 		for (int i = 0; i < this.contato.size(); i++) {
 			if (this.contato.get(i).getNome().equals(nomeContato)) {
@@ -75,6 +75,7 @@ public class BDSimulado {
 			}
 		}
 	}
+
 	// ----------------------------------------------------------------
 
 	// Questão 3: Classe que recupera dados de todos os contatos/empresas e

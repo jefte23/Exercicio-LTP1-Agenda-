@@ -1,24 +1,17 @@
 public class Conexao {
 
-	private Contato contato;
 	private String tipo;
 	private String valor;
 
 	@Override
 	public String toString() {
-		return "Conexao [contato=" + contato + ", tipo=" + tipo + ", valor=" + valor + "]";
+		return "Conexao [tipo=" + tipo + ", valor=" + valor + "]";
 	}
 
-	public Conexao(Contato contatoPorNome, String tipo2, String valor2) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public Contato getContato() {
-		return contato;
-	}
-
-	public void setContato(Contato contato) {
-		this.contato = contato;
+	public Conexao(String tipo, String valor) {
+		super();
+		this.tipo = tipo;
+		this.valor = valor;
 	}
 
 	public String getTipo() {

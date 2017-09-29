@@ -9,7 +9,7 @@ public class Principal {
 
 		// Recupera lista de contatos e empresas
 
-		// bds.addConexaoContato("João", "Email", "João@gmail.com");
+		bds.addConexaoContato("João", "Email", "João@gmail.com");
 		// bds.addConexaoContato("Mario", "Celular", "89578457");
 		// bds.addConexaoContato("Erivelton", "Residencial", "33358455");
 		// bds.addConexaoContato("Capgemini", "Email",
