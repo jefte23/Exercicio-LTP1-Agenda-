@@ -8,7 +8,6 @@ public class Principal {
 		BDSimulado bds = new BDSimulado();
 
 		// Recupera lista de contatos e empresas
-
 		bds.addConexaoContato("João", "Email", "João@gmail.com");
 		bds.addConexaoContato("Mario", "Celular", "89578457");
 		bds.addConexaoContato("Erivelton", "Residencial", "33358455");
@@ -24,7 +23,22 @@ public class Principal {
 		bds.addConexaoContato("Larine", "Celular", "89578457");
 		bds.addConexaoContato("Eron", "Celular", "99857585");
 		bds.addConexaoContato("Junior", "Email", "junior@Capgemni.com");
+		bds.addConexaoContato("Jefté", "Email", "jefte123@gmail.com.br");
+		bds.addConexaoContato("Jefté", "Celular", "985458452");
+		bds.addConexaoContato("Laresa", "Celular", "998698578");
+		bds.addConexaoContato("Laresa", "Telefone", "398574812");
+		bds.addConexaoContato("Vinicius", "Celular", "989854875");
+		bds.addConexaoContato("Vinicius", "Telefone", "335336245");
+		bds.addConexaoContato("Vinicius", "Email", "vinicius@cast.com.br");
 		bds.addConexaoContato("Pedro", "Email", "Pedro@uol.com.br");
+
+		// Questão 2
+		System.out.println("---------------- Questão 2 ----------------");
+		ArrayList<Contato> getDadosContatos = bds.getDadosContatos();
+		for (int i = 0; i < getDadosContatos.size(); i++) {
+			System.out.println("Contato" + bds.getDadosContatos().get(i).getNome() + "Conexao"
+					+ bds.getDadosContatos().get(i).getAConexoes());
+		}
 
 		// Questão 3
 		System.out.println("---------------- Questão 3 ----------------");
@@ -70,6 +84,12 @@ public class Principal {
 
 		// <<< Questão Bonus >>>
 		System.out.println("-------------- Questão Bonus --------------");
+		System.out.println("Lista Ordenada");
+		ArrayList<Contato> listaOrdenada = bds.ordenandoComparable();
+		for (int i = 0; i < listaOrdenada.size(); i++) {
+			System.out.println(listaOrdenada.get(i));
+
+		}
 
 	}
 }

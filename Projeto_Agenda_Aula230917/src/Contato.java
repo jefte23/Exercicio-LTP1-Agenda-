@@ -1,9 +1,10 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Contato {
+public class Contato implements Comparable<Contato> {
 
 	private String nome;
-	private String dataNascimento;
+	private LocalDate dataNascimento;
 	private String sexo;
 	private String cidade;
 	private String UF;
@@ -13,12 +14,13 @@ public class Contato {
 	// Metodo ToString
 	@Override
 	public String toString() {
-		return "Contato [nome=" + nome + ", dataNascimento=" + dataNascimento + ", sexo=" + sexo + ", cidade=" + cidade
-				+ ", UF=" + UF + ", empresa=" + empresa + ", conexoes=" + conexoes + "]";
+		return "Contato [nome=" + nome + ", dataNascimento=" + getDataComoString() + ", sexo=" + sexo + ", cidade="
+				+ cidade + ", UF=" + UF + ", empresa=" + empresa + ", conexoes=" + conexoes + "]";
 	}
 
 	// Metodo Construtor
-	public Contato(String nome, String dataNascimento, String sexo, String cidade, String UF, Empresa empresa) {
+	public Contato(String nome, LocalDate dataNascimento, String sexo, String cidade, String UF, Empresa empresa,
+			ArrayList<Conexao> conexoes) {
 		super();
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
@@ -37,11 +39,11 @@ public class Contato {
 		this.nome = nome;
 	}
 
-	public String getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(String dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
@@ -83,6 +85,17 @@ public class Contato {
 
 	public void setConexoes(ArrayList<Conexao> conexoes) {
 		this.conexoes = conexoes;
+	}
+
+	public String getDataComoString() {
+		return dataNascimento.getDayOfMonth() + "/" + dataNascimento.getMonthValue() + "/" + dataNascimento.getYear();
+	}
+
+	// http://blog.alura.com.br/ordenando-uma-lista-de-objetos-em-java/
+	// https://www.tutorialspoint.com/java/java_using_comparator.htm
+
+	public int compareTo(Contato contato) {
+		return this.nome.compareTo(contato.getNome());
 	}
 
 }

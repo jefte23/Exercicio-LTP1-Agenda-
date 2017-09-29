@@ -1,10 +1,11 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class BDSimulado {
 	// Atributos
 	ArrayList<Contato> contato;
 	ArrayList<Empresa> empresas;
-	ArrayList<Conexao> conexoes;
 
 	public BDSimulado() {
 		// Instanciar Objetos da CLasse Empresa
@@ -19,16 +20,17 @@ public class BDSimulado {
 
 		// Instanciar Objetos da Classe Contato;
 		this.contato = new ArrayList<Contato>();
-		Contato c1 = new Contato("João", "01/09/2000", "Masculino", "São Paulo", "SP", e1);
-		Contato c2 = new Contato("Mario", "01/09/1999", "Masculino", "Brasilia", "DF", e3);
-		Contato c3 = new Contato("Erivelton", "01/09/1980", "Masculino", "Belem", "PA", e2);
-		Contato c4 = new Contato("Larine", "01/09/1990", "Feminino", "Brasilia", "DF", e1);
-		Contato c5 = new Contato("Raquel", "01/09/1994", "Feminino", "Salvador", "BA", e1);
-		Contato c6 = new Contato("Eron", "01/09/1986", "Masculino", "Salvador", "BA", e2);
-		Contato c7 = new Contato("Pedro", "01/09/1983", "Masculino", "Patos", "MG", e3);
-		Contato c8 = new Contato("Jefté", "01/05/1988", "Masculino", "Pernambuco", "PE", e1);
-		Contato c9 = new Contato("Laresa", "01/09/1993", "Feminino", "Brasilia", "DF", e2);
-		Contato c10 = new Contato("Vinicius", "01/09/1989", "Masculino", "Rio de Janeiro", "RJ", e3);
+		Contato c1 = new Contato("João", LocalDate.of(1990, 10, 15), "Masculino", "São Paulo", "SP", e1, null);
+		Contato c2 = new Contato("Mario", LocalDate.of(1999, 9, 01), "Masculino", "Brasilia", "DF", e3, null);
+		Contato c3 = new Contato("Erivelton", LocalDate.of(1980, 05, 03), "Masculino", "Belem", "PA", e2, null);
+		Contato c4 = new Contato("Larine", LocalDate.of(1990, 2, 03), "Feminino", "Brasilia", "DF", e1, null);
+		Contato c5 = new Contato("Raquel", LocalDate.of(1992, 11, 26), "Feminino", "Salvador", "BA", e1, null);
+		Contato c6 = new Contato("Eron", LocalDate.of(1986, 9, 30), "Masculino", "Salvador", "BA", e2, null);
+		Contato c7 = new Contato("Pedro", LocalDate.of(1983, 3, 12), "Masculino", "Patos", "MG", e3, null);
+		Contato c8 = new Contato("Jefté", LocalDate.of(1988, 9, 17), "Masculino", "Pernambuco", "PE", e1, null);
+		Contato c9 = new Contato("Laresa", LocalDate.of(1993, 2, 02), "Feminino", "Brasilia", "DF", e2, null);
+		Contato c10 = new Contato("Vinicius", LocalDate.of(1989, 12, 22), "Masculino", "Rio de Janeiro", "RJ", e3,
+				null);
 
 		// Adicionando Contato a Array
 		this.contato.add(c1);
@@ -75,7 +77,6 @@ public class BDSimulado {
 			}
 		}
 	}
-
 	// ----------------------------------------------------------------
 
 	// Questão 3: Classe que recupera dados de todos os contatos/empresas e
@@ -156,5 +157,12 @@ public class BDSimulado {
 	}
 
 	// Questão Bonus: Ordenar a lista em ordem alfabetica por contato
-
+	public ArrayList<Contato> ordenandoComparable() {
+		Collections.sort(contato);
+		ArrayList<Contato> resultado = new ArrayList<Contato>();
+		for (int i = 0; i < this.contato.size(); i++) {
+			resultado.add(this.contato.get(i));
+		}
+		return resultado;
+	}
 }
