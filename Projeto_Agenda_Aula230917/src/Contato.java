@@ -8,7 +8,7 @@ public class Contato {
 	private String cidade;
 	private String UF;
 	private Empresa empresa;
-	private ArrayList<Conexao> conexoes;
+	private ArrayList<Conexao> conexoes = new ArrayList<Conexao>();
 
 	// Metodo ToString
 	@Override

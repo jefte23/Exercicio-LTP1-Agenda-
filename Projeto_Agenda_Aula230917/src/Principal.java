@@ -10,23 +10,21 @@ public class Principal {
 		// Recupera lista de contatos e empresas
 
 		bds.addConexaoContato("João", "Email", "João@gmail.com");
-		// bds.addConexaoContato("Mario", "Celular", "89578457");
-		// bds.addConexaoContato("Erivelton", "Residencial", "33358455");
-		// bds.addConexaoContato("Capgemini", "Email",
-		// "atendimento@Capgemini.com");
-		// bds.addConexaoContato("Raquel", "Residencial", "35848757");
-		// bds.addConexaoContato("Banco do Brasil", "Email",
-		// "atencimento@bb.com.br");
-		// bds.addConexaoContato("Raquel", "Email", "Raquel@gmail.com");
-		// bds.addConexaoContato("Capgemini", "Residencial", "35848757");
-		// bds.addConexaoContato("Banco do Brasil", "Celular", "99669987");
-		// bds.addConexaoContato("CAST", "Residencial", "35848757");
-		// bds.addConexaoContato("Banco do Brasil", "Residencial", "33545845");
-		// bds.addConexaoContato("Mario", "Residdencial", "35848757");
-		// bds.addConexaoContato("Larine", "Celular", "89578457");
-		// bds.addConexaoContato("Eron", "Celular", "99857585");
-		// bds.addConexaoContato("Junior", "Email", "junior@Capgemni.com");
-		// bds.addConexaoContato("Pedro", "Email", "Pedro@uol.com.br");
+		bds.addConexaoContato("Mario", "Celular", "89578457");
+		bds.addConexaoContato("Erivelton", "Residencial", "33358455");
+		bds.addConexaoContato("Capgemini", "Email", "atendimento@Capgemini.com");
+		bds.addConexaoContato("Raquel", "Residencial", "35848757");
+		bds.addConexaoContato("Banco do Brasil", "Email", "atencimento@bb.com.br");
+		bds.addConexaoContato("Raquel", "Email", "Raquel@gmail.com");
+		bds.addConexaoContato("Capgemini", "Residencial", "35848757");
+		bds.addConexaoContato("Banco do Brasil", "Celular", "99669987");
+		bds.addConexaoContato("CAST", "Residencial", "35848757");
+		bds.addConexaoContato("Banco do Brasil", "Residencial", "33545845");
+		bds.addConexaoContato("Mario", "Residdencial", "35848757");
+		bds.addConexaoContato("Larine", "Celular", "89578457");
+		bds.addConexaoContato("Eron", "Celular", "99857585");
+		bds.addConexaoContato("Junior", "Email", "junior@Capgemni.com");
+		bds.addConexaoContato("Pedro", "Email", "Pedro@uol.com.br");
 
 		// Questão 3
 		System.out.println("---------------- Questão 3 ----------------");
